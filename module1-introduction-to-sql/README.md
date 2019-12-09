@@ -51,14 +51,16 @@ randomized, the numeric and boolean fields were left as defaults.
 Use `sqlite3` to load and write queries to explore the data, and answer the
 following questions:
 
-- How many total Characters are there?
-- How many of each specific subclass?
-- How many total Items?
-- How many of the Items are weapons? How many are not?
-- How many Items does each character have? (Return first 20 rows)
-- How many Weapons does each character have? (Return first 20 rows)
-- On average, how many Items does each Character have?
-- On average, how many Weapons does each character have?
+-How many total Characters are there? 45,753
+How many of each specific subclass? 5
+How many total Items? 15,225
+How many of the Items are weapons? How many are not?5,772. 9453.
+How many Items does each character have? (Return first 20 rows) in sqlite
+How many Weapons does each character have? (Return first 20 rows) I dont know
+On average, how many Items does each Character have? 89
+On average, how many Weapons does each character have? I dont know
+ 
+ 
 
 You do not need all the tables - in particular, the `account_*`, `auth_*`,
 `django_*`, and `socialaccount_*` tables are for the application and do not have
@@ -99,10 +101,10 @@ Using the standard `sqlite3` module:
 
 Then write the following queries (also with `sqlite3`) to test:
 
-- Count how many rows you have - it should be 249!
+- Count how many rows you have - it should be 249! got it 
 - How many users who reviewed at least 100 `Nature` in the category also
-  reviewed at least 100 in the `Shopping` category?
-- (*Stretch*) What are the average number of reviews for each category?
+  reviewed at least 100 in the `Shopping` category?) 0, but im sure that wrong
+- (*Stretch*) What are the average number of reviews for each category? I dont know 
 
 Your code (to reproduce all above steps) should be saved in
 `buddymove_holidayiq.py`, and added to the repository along with the generated
